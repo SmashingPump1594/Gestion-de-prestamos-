@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nombre": "CHRISTIAN SANTILLAN",
+    "tipo": "Prestamista"
+  },
+  {
+    "id": 2,
+    "nombre": "ADRIAN GAYTAN",
+    "tipo": "Prestamista"
+  },
+  {
+    "id": 3,
+    "nombre": "TAYDEE",
+    "tipo": "Prestamista"
+  },
+  {
+    "id": 4,
+    "nombre": "CINTHIA",
+    "tipo": "Prestamista"
+  },
+  {
+    "id": 5,
+    "nombre": "HECTOR",
+    "tipo": "Prestamista"
+  },
+  {
+    "id": 6,
+    "nombre": "ÁNGEL",
+    "tipo": "Prestamista"
+  },
+  {
+    "id": 7,
+    "nombre": "BRAYAN",
+    "tipo": "Prestamista"
+  },
+  {
+    "id": 8,
+    "nombre": "OSCAR",
+    "tipo": "Prestamista"
+  },
+  {
+    "id": 9,
+    "nombre": "EDER",
+    "tipo": "Prestamista"
+  },
+  {
+    "id": 10,
+    "nombre": "SABI",
+    "tipo": "Prestamista"
+  },
+  {
+    "id": 11,
+    "nombre": "RAMIRO",
+    "tipo": "Prestamista"
+  },
+  {
+    "id": 12,
+    "nombre": "",
+    "tipo": "Prestamista"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "nombre": "LAPTOP HP 1",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  },
+  {
+    "id": 2,
+    "nombre": "LAPTOP HP 2",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  },
+  {
+    "id": 3,
+    "nombre": "LAPTOP HP 3",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  },
+  {
+    "id": 4,
+    "nombre": "LAPTOP HP 4",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  },
+  {
+    "id": 5,
+    "nombre": "LAPTOP HP 5",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  },
+  {
+    "id": 6,
+    "nombre": "LAPTOP HP 6",
+    "categoria": "Computadora",
+    "estado": "Prestado"
+  },
+  {
+    "id": 7,
+    "nombre": "LAPTOP HP 7",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  },
+  {
+    "id": 8,
+    "nombre": "LAPTOP HP 8",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  },
+  {
+    "id": 9,
+    "nombre": "LAPTOP HP 9",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  },
+  {
+    "id": 10,
+    "nombre": "LAPTOP HP 10",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  },
+  {
+    "id": 11,
+    "nombre": "ACER 1",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  },
+  {
+    "id": 12,
+    "nombre": "ACER 2",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  },
+  {
+    "id": 13,
+    "nombre": "THINKPAD",
+    "categoria": "Computadora",
+    "estado": "Disponible"
+  }
+]

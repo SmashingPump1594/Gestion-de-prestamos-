@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nombre": "Audifonos 1",
+    "categoria": "Audifonos",
+    "estado": "Disponible"
+  },
+  {
+    "id": 2,
+    "nombre": "Audifonos 2",
+    "categoria": "Audifonos",
+    "estado": "Disponible"
+  },
+  {
+    "id": 3,
+    "nombre": "Audifonos 3",
+    "categoria": "Audifonos",
+    "estado": "Disponible"
+  },
+  {
+    "id": 4,
+    "nombre": "Audifonos 4",
+    "categoria": "Audifonos",
+    "estado": "Disponible"
+  },
+  {
+    "id": 5,
+    "nombre": "Audifonos 5",
+    "categoria": "Audifonos",
+    "estado": "Disponible"
+  }
+]

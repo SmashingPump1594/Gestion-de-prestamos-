@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "nombre": "Control TV 1 ",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 2,
+    "nombre": "Control TV 2",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 3,
+    "nombre": "Control TV 3",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 4,
+    "nombre": "Control TV 4",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 5,
+    "nombre": "Control TV 5",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 6,
+    "nombre": "PROYECTOR BLANCO 1",
+    "categoria": "Controles",
+    "estado": "Prestado"
+  },
+  {
+    "id": 7,
+    "nombre": "PROYECTOR BLANCO 2",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 8,
+    "nombre": "PROYECTOR BLANCO 3",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 9,
+    "nombre": "PROYECTOR BLANCO 4",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 10,
+    "nombre": "PROYECTOR BLANCO 5",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 11,
+    "nombre": "PROYECTOR NEGRO 1",
+    "categoria": "Controles",
+    "estado": "Prestado"
+  },
+  {
+    "id": 12,
+    "nombre": "PROYECTOR NEGRO 2",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 13,
+    "nombre": "PROYECTOR NEGRO 3",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 14,
+    "nombre": "PROYECTOR NEGRO 4",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 15,
+    "nombre": "PROYECTOR NEGRO 5",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 17,
+    "nombre": "PROYECTOR BIBLIOTECA ",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 18,
+    "nombre": "CONTROL PROYECTOR BLANCO 6",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  },
+  {
+    "id": 19,
+    "nombre": "CONTROL TV TCL 1",
+    "categoria": "Controles",
+    "estado": "Disponible"
+  }
+]

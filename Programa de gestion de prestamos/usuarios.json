@@ -1,0 +1,382 @@
+[
+  {
+    "id": 1,
+    "nombre": "MYRIAM SOLEDAD GONZALEZ MORALES",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 2,
+    "nombre": "ADRIANA UBIARCO LIMON",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 3,
+    "nombre": "JUAN AGUIRRE RUIZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 4,
+    "nombre": "KAREN VANESSA ORTIZ PERALES",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 5,
+    "nombre": "ESTHER PARTIDA SALCIDO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 6,
+    "nombre": "ALEJANDRA MARQUEZ QUEZADA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 7,
+    "nombre": "MARIA GUADALUPE CORTEZ VERONICA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 8,
+    "nombre": "YESICA MONTIEL MENA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 9,
+    "nombre": "LETICIA LUJANO CORTES",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 10,
+    "nombre": "JOSE CASILLA LIMON",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 11,
+    "nombre": "CAMPOS MUNGUIA CLAUDIA VERONIC",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 12,
+    "nombre": "REYNOSO JAUREGUI JOSE MANUEL",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 13,
+    "nombre": "CAMPOS MUNGUIA LORENA ADRIANA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 14,
+    "nombre": "ARTURO GOMEZ GONZALEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 15,
+    "nombre": "CEJA VARGAS JUDITH",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 16,
+    "nombre": "DORANTES LOPEZ ANDRES",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 17,
+    "nombre": "SAMUEL JAUREGUI GOMEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 18,
+    "nombre": "ADRIANA SOFIA CARRASCO GARCIA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 19,
+    "nombre": "LOPEZ AGUIRRE ROSA ELENA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 20,
+    "nombre": "STEFANY LIZETH CABRALES HERNANDEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 21,
+    "nombre": "MARIA JOSE OCEGUEDA HERNANDEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 22,
+    "nombre": "ACEVEDO LOPEZ DIEGO DANIEL",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 23,
+    "nombre": "MENDOZA HUERTA PAULA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 24,
+    "nombre": "LARAURA NOEMI HERRA GONZALES",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 25,
+    "nombre": "ORTIZ PERALES KAREN VANESSA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 26,
+    "nombre": "CHRISTIAN ALEJANDRO ANGUIANO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 27,
+    "nombre": "ROBERTO DAVID MORGA MEDINA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 28,
+    "nombre": "ALFONSO SOTO IÑIGUEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 29,
+    "nombre": "GUSTAVO CASTRO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 30,
+    "nombre": "SUSANA TERESA BAÑUELOS CASILLAS",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 31,
+    "nombre": "EFRAIN BUSTOS",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 32,
+    "nombre": "MARIA ADRIANA UBIARCO LLANOS",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 33,
+    "nombre": "LAURA NOEMI HERRERA GONZALEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 34,
+    "nombre": "JEHTCEMANY DONATO MENDOZA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 35,
+    "nombre": "PABLO ALBERTO RIVERA HERNANDEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 36,
+    "nombre": "DIEGO DANIEL LOPEZ ACEVEDO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 37,
+    "nombre": "ARELLANO PEREZ VICTOR MANUEL",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 38,
+    "nombre": "ACOSTA DIAZ PAOLA NAOMI",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 39,
+    "nombre": "CARMEN MARIAN SANTILLAN GOMEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 40,
+    "nombre": "PAULA MENDOZA HUERTA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 41,
+    "nombre": "CINTHIA HERNANDEZ VALADEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 42,
+    "nombre": "NOEMI MARIN RAMIREZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 43,
+    "nombre": "LUIS HUMBERTO MORALES CORNEJO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 44,
+    "nombre": "CINTHYA NOEMI LOMELI",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 45,
+    "nombre": "DANIEL VALENZUELA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 46,
+    "nombre": "YUKIE ZUBIETA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 47,
+    "nombre": "MUÑOZ MORENO CLAUDIA DAYANA JACQUELINE",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 48,
+    "nombre": "NAVA GODOY MONICA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 49,
+    "nombre": "CLEMENTE CISNEROS MUÑOZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 50,
+    "nombre": "LIZBETH ALEJANDRA MARQUEZ QUEZADA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 51,
+    "nombre": "SALVADOR GOMEZ DIAZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 52,
+    "nombre": "ERICK ARIEL GUZMAN CARRILLO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 53,
+    "nombre": "KARINA LIZBETH GONZALEZ CARRILLO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 54,
+    "nombre": "EDGAR ROBERTO GUZMAN CARRILLO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 55,
+    "nombre": "ANA ROSA RICO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 56,
+    "nombre": "RODOLFO BRACAMONTES BLANCO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 57,
+    "nombre": "CONCEPCION ANGELICA FERNANDEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 58,
+    "nombre": "PEDRO RAUL VALENCIA CARRILLO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 59,
+    "nombre": "LAURA GODOY",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 60,
+    "nombre": "ZEFERINO JIMENEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 61,
+    "nombre": "RAZIEL OMAR TAPIA LLANOS",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 62,
+    "nombre": "GONZALES SALDIVAR ANGEL",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 63,
+    "nombre": "ADRIANA ELIZABETH MARTINEZOCARANZA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 64,
+    "nombre": "MARTIN VALLE MAGALLANES",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 65,
+    "nombre": "CARMEN AIDA ROMERO ANTON",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 66,
+    "nombre": "ESPARZA ALCALA EMILIO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 67,
+    "nombre": "ALEJANDRA GUTIERREZ DELGADO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 68,
+    "nombre": "QUINTANA ROJAS GERARDO",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 69,
+    "nombre": "MOISES CRUZ FIGUEROA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 70,
+    "nombre": "SALAS CASTRO JULIA MINERVA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 71,
+    "nombre": "EDUARDO MORALES",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 72,
+    "nombre": "CHRISTIAN ORNELAS DOMINGUEZ",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 73,
+    "nombre": "PANTOJA ESPINOZA YADIRA",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 74,
+    "nombre": "KARLA KARINA ROMAN GONZALES",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 75,
+    "nombre": "CASTRO PEREZ GUSTAVO ANDRES",
+    "tipo": "Usuario"
+  },
+  {
+    "id": 76,
+    "nombre": "",
+    "tipo": "Usuario"
+  }
+]

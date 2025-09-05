@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombre": "CABLE HDMI NEGRO 1",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 2,
+    "nombre": "CABLE HDMI NEGRO 2",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 3,
+    "nombre": "CABLE HDMI NEGRO 3",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 4,
+    "nombre": "CABLE HDMI NEGRO 4",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 5,
+    "nombre": "CABLE HDMI NEGRO 5",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 6,
+    "nombre": "CABLE HDMI ROJO 1",
+    "categoria": "Cables",
+    "estado": "Prestado"
+  },
+  {
+    "id": 7,
+    "nombre": "CABLE HDMI ROJO 2 ",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 8,
+    "nombre": "CABLE HDMI ROJO 3 ",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 9,
+    "nombre": " CABLE HDMI ROJO 4",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 10,
+    "nombre": "CABLE HDMI ROJO 5",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 11,
+    "nombre": "CABLE AUXILIAR 3.5",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 12,
+    "nombre": "CABLE USB-USB 3.0",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 13,
+    "nombre": "EXTENSION ELECTRICA",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 13,
+    "nombre": "CABLE HDMI LARGO",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  },
+  {
+    "id": 14,
+    "nombre": "ADAPTADOR HDMI-VGA",
+    "categoria": "Cables",
+    "estado": "Disponible"
+  }
+]
