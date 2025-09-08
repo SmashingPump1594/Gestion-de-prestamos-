@@ -63,7 +63,7 @@
     "id": 11,
     "nombre": "PROYECTOR NEGRO 1",
     "categoria": "Controles",
-    "estado": "Prestado"
+    "estado": "Disponible"
   },
   {
     "id": 12,
@@ -92,12 +92,6 @@
   {
     "id": 17,
     "nombre": "PROYECTOR BIBLIOTECA ",
-    "categoria": "Controles",
-    "estado": "Disponible"
-  },
-  {
-    "id": 18,
-    "nombre": "CONTROL PROYECTOR BLANCO 6",
     "categoria": "Controles",
     "estado": "Disponible"
   },

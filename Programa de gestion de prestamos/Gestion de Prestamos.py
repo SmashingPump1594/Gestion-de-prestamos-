@@ -22,19 +22,22 @@ class SistemaPrestamos:
         self.root.title("Gestión de Préstamos - Prepa 10")
         self.root.geometry("1200x800")
         self.root.configure(bg='#f0f0f0')
-        
+
+        # Carpeta base del script
+        self.base_dir = os.path.dirname(os.path.abspath(__file__))
+
         # Configurar estilo
         self.setup_styles()
-        
+
         # Datos del sistema
         self.prestamos = []
         self.equipos = []
         self.usuarios = []
         self.prestamistas = []
-        
+
         # Cargar datos existentes
         self.cargar_datos()
-        
+
         # Crear interfaz
         self.crear_interfaz()
         
@@ -51,78 +54,81 @@ class SistemaPrestamos:
     def cargar_datos(self):
         """Cargar datos desde archivos JSON"""
         try:
+            # Helper para ruta absoluta
+            def ruta_json(nombre):
+                return os.path.join(self.base_dir, nombre)
+
             # Cargar préstamos
-            if os.path.exists('prestamos.json'):
-                with open('prestamos.json', 'r', encoding='utf-8') as f:
+            if os.path.exists(ruta_json('prestamos.json')):
+                with open(ruta_json('prestamos.json'), 'r', encoding='utf-8') as f:
                     self.prestamos = json.load(f)
-            
+            else:
+                self.prestamos = []
+
             # Cargar equipos
-            if os.path.exists('equipos.json'):
-                with open('equipos.json', 'r', encoding='utf-8') as f:
+            if os.path.exists(ruta_json('equipos.json')):
+                with open(ruta_json('equipos.json'), 'r', encoding='utf-8') as f:
                     self.equipos = json.load(f)
             else:
-                    self.equipos = [
-                ]
-                
+                self.equipos = []
+
             # Cargar controles
-            if os.path.exists('controles.json'):
-                with open('controles.json', 'r', encoding='utf-8') as f:
+            if os.path.exists(ruta_json('controles.json')):
+                with open(ruta_json('controles.json'), 'r', encoding='utf-8') as f:
                     self.controles = json.load(f)
             else:
-                    self.controles = [
-                ]
-                
+                self.controles = []
+
             # Cargar cables
-            if os.path.exists('cables.json'):
-                with open('cables.json', 'r', encoding='utf-8') as f:
+            if os.path.exists(ruta_json('cables.json')):
+                with open(ruta_json('cables.json'), 'r', encoding='utf-8') as f:
                     self.cables = json.load(f)
             else:
-                    self.cables = [
-                ]
-                    
+                self.cables = []
+
             # Cargar audifonos
-            if os.path.exists('audifonos.json'):
-                with open('audifonos.json', 'r', encoding='utf-8') as f:
+            if os.path.exists(ruta_json('audifonos.json')):
+                with open(ruta_json('audifonos.json'), 'r', encoding='utf-8') as f:
                     self.audifonos = json.load(f)
             else:
-                    self.audifonos = [
-                ]
-            
+                self.audifonos = []
+
             # Cargar usuarios
-            if os.path.exists('usuarios.json'):
-                with open('usuarios.json', 'r', encoding='utf-8') as f:
+            if os.path.exists(ruta_json('usuarios.json')):
+                with open(ruta_json('usuarios.json'), 'r', encoding='utf-8') as f:
                     self.usuarios = json.load(f)
             else:
-                self.usuarios = [
-                ]
-            
+                self.usuarios = []
+
             # Cargar prestamistas
-            if os.path.exists('prestamistas.json'):
-                with open('prestamistas.json', 'r', encoding='utf-8') as f:
+            if os.path.exists(ruta_json('prestamistas.json')):
+                with open(ruta_json('prestamistas.json'), 'r', encoding='utf-8') as f:
                     self.prestamistas = json.load(f)
             else:
-                    self.prestamistas = [
-                ]
-                
+                self.prestamistas = []
+
         except Exception as e:
             messagebox.showerror("Error", f"Error al cargar datos: {str(e)}")
     
     def guardar_datos(self):
         """Guardar datos en archivos JSON"""
         try:
-            with open('prestamos.json', 'w', encoding='utf-8') as f:
+            def ruta_json(nombre):
+                return os.path.join(self.base_dir, nombre)
+
+            with open(ruta_json('prestamos.json'), 'w', encoding='utf-8') as f:
                 json.dump(self.prestamos, f, ensure_ascii=False, indent=2)
-            with open('equipos.json', 'w', encoding='utf-8') as f:
+            with open(ruta_json('equipos.json'), 'w', encoding='utf-8') as f:
                 json.dump(self.equipos, f, ensure_ascii=False, indent=2)
-            with open('controles.json', 'w', encoding='utf-8') as f:
+            with open(ruta_json('controles.json'), 'w', encoding='utf-8') as f:
                 json.dump(self.controles, f, ensure_ascii=False, indent=2)
-            with open('cables.json', 'w', encoding='utf-8') as f:
+            with open(ruta_json('cables.json'), 'w', encoding='utf-8') as f:
                 json.dump(self.cables, f, ensure_ascii=False, indent=2)
-            with open('audifonos.json', 'w', encoding='utf-8') as f:
+            with open(ruta_json('audifonos.json'), 'w', encoding='utf-8') as f:
                 json.dump(self.audifonos, f, ensure_ascii=False, indent=2)
-            with open('usuarios.json', 'w', encoding='utf-8') as f:
+            with open(ruta_json('usuarios.json'), 'w', encoding='utf-8') as f:
                 json.dump(self.usuarios, f, ensure_ascii=False, indent=2)
-            with open('prestamistas.json', 'w', encoding='utf-8') as f:
+            with open(ruta_json('prestamistas.json'), 'w', encoding='utf-8') as f:
                 json.dump(self.prestamistas, f, ensure_ascii=False, indent=2)
         except Exception as e:
             messagebox.showerror("Error", f"Error al guardar datos: {str(e)}")
@@ -227,13 +233,18 @@ class SistemaPrestamos:
         list_frame.grid(row=1, column=0, columnspan=2, sticky=(tk.W, tk.E, tk.N, tk.S), pady=(10, 0))
         
         # Treeview para mostrar préstamos
-        columns = ('ID', 'Usuario', 'Prestamista', 'Equipo', 'Controles', 'Cables', 'Audifonos', 'Estado Equipo', 'Fecha Préstamo', 'Fecha Entrega', 'Quien Recibe', 'Estado')
+
+        columns = ('ID', 'Usuario', 'Prestamista', 'Equipo', 'Controles', 'Cables', 'Audifonos', 'Estado Equipo', 'Observaciones', 'Fecha Préstamo', 'Fecha Entrega', 'Quien Recibe', 'Estado', 'Observaciones Finales')
         self.prestamos_tree = ttk.Treeview(list_frame, columns=columns, show='headings', height=15)
-        
+
         # Configurar columnas
         for col in columns:
-            self.prestamos_tree.heading(col, text=col)
-            self.prestamos_tree.column(col, width=120)
+            if col == 'Observaciones':
+                self.prestamos_tree.heading(col, text=col)
+                self.prestamos_tree.column(col, width=180)
+            else:
+                self.prestamos_tree.heading(col, text=col)
+                self.prestamos_tree.column(col, width=120)
         
         # Scrollbar
         scrollbar = ttk.Scrollbar(list_frame, orient=tk.VERTICAL, command=self.prestamos_tree.yview)
@@ -376,7 +387,7 @@ class SistemaPrestamos:
         results_frame.grid(row=1, column=0, columnspan=2, sticky=(tk.W, tk.E, tk.N, tk.S), pady=(10, 0))
         
         # Treeview para resultados
-        columns = ('ID', 'Usuario', 'Prestamista', 'Equipo', 'Estado Equipo', 'Fecha Préstamo', 'Fecha Entrega', 'Quien Recibe', 'Estado')
+        columns = ('ID', 'Usuario', 'Prestamista', 'Equipo', 'Estado Equipo', 'Observaciones', 'Fecha Préstamo', 'Quien Recibe', 'Estado','Fecha Entrega', 'Observaciones_Finales')
         self.resultados_tree = ttk.Treeview(results_frame, columns=columns, show='headings', height=10)
         
         for col in columns:
@@ -465,10 +476,12 @@ class SistemaPrestamos:
                 prestamo.get('cables', ''),
                 prestamo.get('audifonos', ''),
                 prestamo.get('estado_equipo', 'Completo'),
+                prestamo.get('observaciones', ''),
                 prestamo['fecha_prestamo'],
                 prestamo.get('fecha_entrega', 'Pendiente'),
                 prestamo.get('quien_recibe', ''),
-                prestamo['estado']
+                prestamo['estado'],
+                prestamo.get('observaciones_finales', '')
             ))
     
     def actualizar_lista_equipos(self):
@@ -720,7 +733,7 @@ class SistemaPrestamos:
             # Ventana para capturar quien recibe
             ventana_entrega = tk.Toplevel(self.root)
             ventana_entrega.title("Marcar como Entregado")
-            ventana_entrega.geometry("450x280")
+            ventana_entrega.geometry("450x320")
             ventana_entrega.transient(self.root)
             ventana_entrega.grab_set()
             
@@ -745,18 +758,61 @@ class SistemaPrestamos:
             estado_frame.pack(pady=(0, 20))
             ttk.Radiobutton(estado_frame, text="Completo", variable=estado_entrega_var, value="Completo").pack(side=tk.LEFT, padx=5)
             ttk.Radiobutton(estado_frame, text="Incompleto", variable=estado_entrega_var, value="Incompleto").pack(side=tk.LEFT, padx=5)
+
+            # Campo de observaciones, oculto por defecto, pero el espacio está reservado
+            observaciones_frame = ttk.Frame(main_frame_entrega)
+            observaciones_label = ttk.Label(observaciones_frame, text="Observaciones (si falta algo):")
+            observaciones_text = tk.Text(observaciones_frame, height=3, width=40)
+            observaciones_label.pack(anchor=tk.W, pady=(0, 2))
+            observaciones_text.pack(fill=tk.X)
+            observaciones_frame.pack(fill=tk.X, pady=(0, 10))
+            # Mostrar/ocultar solo el contenido, no el frame
+            def mostrar_observaciones(*args):
+                if estado_entrega_var.get() == "Incompleto":
+                    observaciones_label.configure(state='normal')
+                    observaciones_text.configure(state='normal')
+                else:
+                    observaciones_label.configure(state='disabled')
+                    observaciones_text.delete("1.0", tk.END)
+                    observaciones_text.configure(state='disabled')
+            estado_entrega_var.trace_add('write', mostrar_observaciones)
+            mostrar_observaciones()
             
             def confirmar_entrega():
                 if not quien_recibe_var.get().strip():
                     messagebox.showerror("Error", "Por favor especifique quién recibe el equipo")
                     return
-                
+
+                # Observaciones si incompleto
+                observaciones = ""
+                if estado_entrega_var.get() == "Incompleto":
+                    observaciones = observaciones_text.get("1.0", tk.END).strip()
+                    # Guardar en observaciones.json
+                    try:
+                        obs_path = os.path.join(self.base_dir, 'observaciones_finales   .json')
+                        if os.path.exists(obs_path):
+                            with open(obs_path, 'r', encoding='utf-8') as f:
+                                obs_data = json.load(f)
+                        else:
+                            obs_data = []
+                        obs_data.append({
+                            'prestamo_id': prestamo['id'],
+                            'fecha': datetime.now().strftime("%Y-%m-%d %H:%M"),
+                            'observaciones': observaciones
+                        })
+                        with open(obs_path, 'w', encoding='utf-8') as f:
+                            json.dump(obs_data, f, ensure_ascii=False, indent=2)
+                    except Exception as e:
+                        messagebox.showerror("Error", f"No se pudo guardar observaciones: {str(e)}")
+
                 # Actualizar préstamo
                 prestamo['fecha_entrega'] = datetime.now().strftime("%Y-%m-%d %H:%M")
                 prestamo['quien_recibe'] = quien_recibe_var.get().strip()
                 prestamo['estado'] = 'Entregado'
                 prestamo['estado_equipo_entrega'] = estado_entrega_var.get()
-                
+                if observaciones:
+                        prestamo['observaciones_finales'] = observaciones
+
                 # Actualizar estado de todos los equipos del préstamo
                 # Equipo principal
                 if prestamo.get('equipo'):
@@ -764,47 +820,47 @@ class SistemaPrestamos:
                         if equipo['nombre'] == prestamo['equipo']:
                             equipo['estado'] = 'Disponible'
                             break
-                
+
                 # Controles
                 if prestamo.get('controles'):
                     for control in getattr(self, 'controles', []):
                         if control['nombre'] == prestamo['controles']:
                             control['estado'] = 'Disponible'
                             break
-                
+
                 # Cables
                 if prestamo.get('cables'):
                     for cable in getattr(self, 'cables', []):
                         if cable['nombre'] == prestamo['cables']:
                             cable['estado'] = 'Disponible'
                             break
-                
+
                 # Audífonos
                 if prestamo.get('audifonos'):
                     for audifono in getattr(self, 'audifonos', []):
                         if audifono['nombre'] == prestamo['audifonos']:
                             audifono['estado'] = 'Disponible'
                             break
-                
+
                 # Guardar datos
                 self.guardar_datos()
-                
+
                 # Actualizar interfaces
                 self.actualizar_lista_prestamos()
                 self.actualizar_lista_equipos()
                 self.actualizar_listas_desplegables()
-                
+
                 ventana_entrega.destroy()
                 messagebox.showinfo("Éxito", "Equipo marcado como entregado correctamente")
             
             # Frame para botones
             button_frame_entrega = ttk.Frame(main_frame_entrega)
-            button_frame_entrega.pack(fill=tk.X, pady=(10, 0))
+            button_frame_entrega.pack(fill=tk.X)
             
             ttk.Button(button_frame_entrega, text="Confirmar Entrega", 
                       command=confirmar_entrega, style='Custom.TButton').pack(side=tk.LEFT, padx=(0, 10))
             ttk.Button(button_frame_entrega, text="Cancelar", 
-                      command=ventana_entrega.destroy).pack(side=tk.LEFT)
+                      command=ventana_entrega.destroy).pack(side=tk.LEFT)   
             
         except Exception as e:
             messagebox.showerror("Error", f"Error al marcar como entregado: {str(e)}")
