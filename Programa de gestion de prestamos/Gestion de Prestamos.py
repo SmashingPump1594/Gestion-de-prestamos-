@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Sistema de Gestión de Préstamos de Equipos de Cómputo
-Para Prepa 10 - Versión 1.0
-
-Sistema de Gestión
-Fecha: 04/09/2025
-"""
-
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 import json
@@ -430,8 +420,7 @@ class SistemaPrestamos:
         controles_disponibles = [f"{c['nombre']} (Controles)" for c in getattr(self, 'controles', []) if c.get('estado', 'Disponible') == 'Disponible']
         cables_disponibles = [f"{c['nombre']} (Cable)" for c in getattr(self, 'cables', []) if c.get('estado', 'Disponible') == 'Disponible']
         audifonos_disponibles = [f"{a['nombre']} (Audifonos)" for a in getattr(self, 'audifonos', []) if a.get('estado', 'Disponible') == 'Disponible']
-        self.equipo_combo['values'] = equipos_disponibles + controles_disponibles + cables_disponibles + audifonos_disponibles
-
+        self.equipo_combo['values'] = equipos_disponibles 
         # Actualizar controles disponibles
         self.controles_combo['values'] = [f"{c['nombre']}" for c in getattr(self, 'controles', []) if c.get('estado', 'Disponible') == 'Disponible']
 
@@ -789,7 +778,7 @@ class SistemaPrestamos:
                     observaciones = observaciones_text.get("1.0", tk.END).strip()
                     # Guardar en observaciones.json
                     try:
-                        obs_path = os.path.join(self.base_dir, 'observaciones_finales   .json')
+                        obs_path = os.path.join(self.base_dir, 'observaciones_finales.json')
                         if os.path.exists(obs_path):
                             with open(obs_path, 'r', encoding='utf-8') as f:
                                 obs_data = json.load(f)
